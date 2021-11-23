@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../js/aos/aos.css" rel="stylesheet">
+    <script src="../../js/aos/aos.js"></script>
+    <title>REDESIGN</title>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline-style: none;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    img {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .wrap {
+        position: relative;
+        display: block;
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        width: 1920px;
+        margin: 0 auto;
+    }
+</style>
+
+<script>
+    window.onload = function () {
+    AOS.init();
+};
+</script>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <img src="pro1.png" alt="이미지">
+            <img src="pro2.png" alt="이미지" data-aos="fade-up">
+            <img src="pro3.png" alt="이미지" data-aos="fade-up">
+            <img src="pro4.png" alt="이미지" data-aos="fade-up">
+            <img src="pro5.png" alt="이미지" data-aos="fade-up">
+            <img src="pro6.png" alt="이미지" data-aos="fade-up">
+            <img src="pro7.png" alt="이미지" data-aos="fade-up">
+        </div>
+    </div>
+</body>
+
+</html>
