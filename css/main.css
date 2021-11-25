@@ -31,6 +31,7 @@ html {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
+    color: #000;
     font-size: 1.5rem;
     letter-spacing: -0.04rem;
     line-height: 1;
@@ -178,10 +179,10 @@ h2 {
 }
 
 .visual-txt {
-    font-size: 5rem;
+    font-size: 6rem;
     color: #fff;
     font-weight: 200;
-    animation: up-down 1s infinite ease-in-out alternate;
+    animation: up-down 0.6s infinite ease-in-out alternate;
 }
 
 .visual-txt>b {
@@ -189,12 +190,12 @@ h2 {
 }
 
 @keyframes up-down {
-    from {
-        transform: translateY(0rem);
+    0% {
+        transform: translateY(0);
     }
 
-    to {
-        transform: translateY(10rem);
+    100% {
+        transform: translateY(100%);
     }
 }
 
@@ -633,25 +634,29 @@ h2 {
 .footer {
     position: relative;
     width: 160rem;
+    height: 90rem;
     background-color: #697290;
     text-align: center;
     margin: 0 auto;
 }
 
 .footer .container {
-    padding-top: 6rem;
-    padding-bottom: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
 }
 
 .f-main {
     color: #fff;
     line-height: 2;
     font-weight: 200;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .f-txt>b {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .f-cont {
@@ -666,7 +671,7 @@ h2 {
 }
 
 .f-cont-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 200;
     padding-top: 1.2rem;
     color: #fff;
@@ -675,8 +680,8 @@ h2 {
 .copy {
     padding-top: 5rem;
     padding-bottom: 3rem;
-    font-style: 1.2rem;
-    color: #fff;
+    font-size: 1.2rem;
+    color: #f9f9f9;
     font-weight: 100;
     text-align: center;
 }
