@@ -10,6 +10,7 @@
     <title>REDESIGN</title>
 </head>
 <style>
+    @import url('../../css/notosanskr/NotoSansKR.css');
 
     * {
         margin: 0;
@@ -19,13 +20,22 @@
     }
 
     a {
-        color: #333;
+        position: relative;
+        display: block;
+        color: #000;
         text-decoration: none;
     }
 
     img {
         border: 0;
         vertical-align: middle;
+    }
+
+    body {
+        font-family: 'Noto Sans KR';
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #000;
     }
 
     .wrap {
@@ -39,17 +49,67 @@
         width: 1920px;
         margin: 0 auto;
     }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 5rem;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 15%);
+    }
+
+    .header-bt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        width: 20rem;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    a:hover {
+        color: royalblue;
+    }
+
+    a::after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 0;
+        height: 0.15rem;
+        background-color: rgb(205, 76, 245);
+        border-radius: 2rem;
+        transition: all 0.3s;
+    }
+
+    a:hover::after {
+        width: 100%;
+        background-color: rgb(133, 141, 247);
+    }
 </style>
 
 <script>
     window.onload = function () {
-    AOS.init();
-};
+        AOS.init();
+    };
 </script>
 
 <body>
     <div class="wrap">
         <div class="container">
+            <header class="header">
+                <div class="header-bt">
+                    <a href="../red3/pro3.html">이전</a>
+                    <a href="red4.html">Work</a>
+                    <a href="../red1/pro1.html">다음</a>
+                </div>
+            </header>
             <img src="pro1.png" alt="이미지">
             <img src="pro2.png" alt="이미지" data-aos="fade-up">
             <img src="pro3.png" alt="이미지" data-aos="fade-up">

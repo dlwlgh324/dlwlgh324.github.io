@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../js/aos/aos.css" rel="stylesheet">
+    <script src="../../js/aos/aos.js"></script>
     <title>REDESIGN</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline-style: none;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    img {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .wrap {
+        position: relative;
+        display: block;
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+    .img-3 {
+        position: relative;
+        display: block;
+        width: 1920px;
+        height: 47px;
+        background: url('3.png') 0 center / 1920px repeat-x;
+        animation: movebg 8s linear infinite;
+    }
+
+    .img-7 {
+        position: relative;
+        display: block;
+        width: 1920px;
+        height: 47px;
+        background: url('7.png') 0 center / 1920px repeat-x;
+        animation: movebg 8s linear infinite;
+    }
+
+    .img-9 {
+        position: relative;
+        display: block;
+        width: 1920px;
+        height: 47px;
+        background: url('9.png') 0 center / 1920px repeat-x;
+        animation: movebg 8s linear infinite;
+    }
+
+    @keyframes movebg {
+        0% {
+            background-position: 0 center;
+        }
+
+        100% {
+            background-position: -1920px center;
+        }
+    }
+</style>
+
+<script>
+    window.onload = function () {
+        AOS.init();
+    };
+</script>
+
 <body>
     <div class="wrap">
-        
+        <div class="container">
+            <img src="1.png" alt="이미지">
+            <img src="2.png" alt="이미지" data-aos="fade-up">
+            <span class="img-3"></span>
+            <img src="4.png" alt="이미지">
+            <img src="5.png" alt="이미지" data-aos="fade-up">
+            <img src="6.png" alt="이미지" data-aos="fade-up">
+            <span class="img-7" data-aos="fade-up"></span>
+            <img src="8.png" alt="이미지" data-aos="fade-up">
+            <span class="img-9"></span>
+            <img src="10.png" alt="이미지" data-aos="fade-up">
+            <img src="11.png" alt="이미지">
+        </div>
     </div>
 </body>
+
 </html>
