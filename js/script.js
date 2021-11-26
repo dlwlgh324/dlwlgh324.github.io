@@ -11,6 +11,14 @@ $(document).ready(function () {
         });
     });
 
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 150) {
+            $('.gotop').addClass('gotop-show');
+        } else {
+            $('.gotop').removeClass('gotop-show');
+        }
+    });
+
     // 부드럽게 위치 이동하는 코드
     var moveEl = $('.move');
     // 클릭시 해당위치로 부드럽게 이동한다.
