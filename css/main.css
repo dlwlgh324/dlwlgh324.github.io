@@ -47,14 +47,14 @@ html {
 }
 
 /* 스크롤바의 width */
-::-webkit-scrollbar-track { 
+::-webkit-scrollbar-track {
     background-color: #f9f9f9;
 }
 
 /* 스크롤바의 전체 배경색 */
 ::-webkit-scrollbar-thumb {
-    
-        background-color: #8ba5ce;
+
+    background-color: #8ba5ce;
 }
 
 /* 스크롤바 색 */
@@ -87,6 +87,38 @@ h2 {
     display: block;
     width: 100%;
     clear: both;
+}
+
+/* 위로가기 */
+.gotop {
+    position: fixed;
+    right: 20rem;
+    bottom: 15rem;
+    width: 8rem;
+    height: 6rem;
+    display: block;
+    border: 0;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #333;
+    text-align: center;
+}
+
+.gotop p {
+    margin-top: 0.8rem;
+}
+
+.gotop:hover {
+    background-color: #8ba5ff;
+}
+
+.gotop-show {
+    opacity: 1;
 }
 
 .wrap {
