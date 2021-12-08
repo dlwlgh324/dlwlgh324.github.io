@@ -28,19 +28,6 @@ html {
     overflow-x: hidden;
 }
 
-html {
-    /* scrollbar-3dLight-Color: #efefef;
-    scrollbar-arrow-color: #dfdfdf;
-    scrollbar-base-color: #efefef;
-    scrollbar-Face-Color: #dfdfdf;
-    scrollbar-Track-Color: #efefef;
-    scrollbar-DarkShadow-Color: #efefef;
-    scrollbar-Highlight-Color: #efefef;
-    scrollbar-Shadow-Color: #efefef; */
-    -ms-overflow-style: none;
-    overflow: auto;
-}
-
 /* SCROLL */
 ::-webkit-scrollbar {
     width: 1rem;
