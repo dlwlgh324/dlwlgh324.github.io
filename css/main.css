@@ -40,7 +40,6 @@ html {
 
 /* 스크롤바의 전체 배경색 */
 ::-webkit-scrollbar-thumb {
-
     background-color: #8ba5ce;
 }
 
@@ -96,7 +95,8 @@ h2 {
     text-align: center;
 }
 
-.gotop p {
+.gotop span {
+    display: block;
     margin-top: 0.8rem;
 }
 
@@ -145,7 +145,7 @@ h2 {
 .header-active {
     background-color: #fff;
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 15%)
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2)
 }
 
 .header-active .logo {
@@ -418,7 +418,7 @@ h2 {
     background-color: #000;
 }
 
-.skill-img img{
+.skill-img img {
     position: absolute;
     top: 50%;
     left: 0;
@@ -428,7 +428,7 @@ h2 {
     opacity: 0.5;
 }
 
-.skill-intro{
+.skill-intro {
     position: absolute;
     top: 22rem;
     left: 15rem;
@@ -441,7 +441,7 @@ h2 {
     white-space: nowrap;
 }
 
-.skill-intro b{
+.skill-intro b {
     font-weight: 500;
     font-size: 2.5rem;
 }
@@ -499,7 +499,7 @@ h2 {
     width: 160rem;
     height: 87rem;
     background: url('../images/work-bg.png') no-repeat;
-    border-top: 0.1rem solid #dddd;
+    border-top: 0.1rem solid #ddd;
     margin: 0 auto;
 }
 
@@ -616,8 +616,8 @@ h2 {
     width: 160rem;
     height: 87rem;
     background: url('../images/work-bg.png') no-repeat;
-    border-top: 0.1rem solid #dddd;
-    border-bottom: 0.1rem solid #dddd;
+    border-top: 0.1rem solid #ddd;
+    border-bottom: 0.1rem solid #ddd;
     margin: 0 auto;
 }
 
