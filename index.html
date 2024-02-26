@@ -34,7 +34,7 @@
 
 <body>
     <!-- 모달창 -->
-    <div class="modal">
+    <!-- <div class="modal">
         <div class="modal-cont">
             <button class="modal-close">
                 close
@@ -44,57 +44,44 @@
                 </b><br>
                 Chrome에 최적화되어 있는 사이트입니다.</a>
         </div>
-    </div>
+    </div> -->
     <!-- 위로가기 -->
     <button class="gotop">
         <img src="images/gotop1.png" alt="위로가기">
         <span>Back to Top</span>
     </button>
-    <div class="wrap" id="home">
+    <div class="wrap">
         <!-- 상단영역 -->
         <header class="header">
             <div class="container">
-                <a href="#home" class="logo move">로고</a>
                 <ul class="gnb">
                     <li><a href="#home" class="move">Home</a></li>
                     <li><a href="#profile" class="move">Profile</a></li>
-                    <li><a href="#publ" class="move">Publishing</a></li>
-                    <li><a href="#red" class="move">Design</a></li>
+                    <li><a href="#work1" class="move">Publishing</a></li>
+                    <li><a href="#work2" class="move">Design</a></li>
                     <li><a href="#ilfe" class="move">life</a></li>
                     <li><a href="#contact" class="move">Contact</a></li>
                 </ul>
             </div>
         </header>
         <!-- visual영역 -->
-        <section class="visual">
+        <section class="visual" id="home">
             <div class="container">
-                <p class="visual-txt">
-                    <b>나날이 성장하는</b><br>
-                    디자이너
-                </p>
-            </div>
-        </section>
-        <!-- about me영역 -->
-        <section class="about" id="profile">
-            <div class="container">
-                <div class="about-txt" data-aos="fade-right">
-                    <h2>ABOUT ME</h2>
-                    <p class="about-txt-1">'<b>의지</b>만 있다면 못할 것이 없다'</p>
-                    <P class="about-txt-2">
-                        새로운 일을 하기에 앞서 의지가 없다면 무엇도 할 수 없다고 생각합니다.<br>
-                        어렵다고 포기하지 않고 항상 배우는 마음가짐으로<br>
-                        나날이 성장하는 디자이너가 되겠습니다.
-                    </p>
-                </div>
-                <img src="images/pro1.png" alt="프로필" data-aos="fade-left">
-                <div class="scroll">
-                    <p>scroll down</p>
-                    <img src="images/pro_scroll.png" alt="스크롤" class="scroll-active">
+                <div class="motion_box">
+                    <img src="/images/object/object4.png" class="object4 motion3" alt="">
+                    <img src="/images/object/object1.png" class="object1 motion4" alt="">
+                    <img src="/images/object/object2.png" class="object2 motion5" alt="">
+                    <img src="/images/object/object3.png" class="object3 motion2" alt="">
+                    <img src="/images/object/object6.png" class="object6 motion4" alt="">
+                    <img src="/images/object/object5.png" class="object5 motion1" alt="">
+                    <img src="/images/object/object7.png" class="object7 motion2" alt="">
+                    <img src="/images/object/object9.png" class="object9 motion4" alt="">
+                    <img src="/images/object/object8.png" class="object8 motion1" alt="">
                 </div>
             </div>
         </section>
         <!-- introduce영역 -->
-        <section class="intro">
+        <section class="intro" id="profile">
             <div class="container">
                 <img src="images/pro2.png" alt="프로필" class="intro-img" data-aos="fade-right">
                 <ul class="intro-box" data-aos="fade-left">
@@ -166,51 +153,9 @@
                 </div>
             </div>
         </section>
-        <!-- skill영역 -->
-        <section class="skill">
-            <div class="container">
-                <span class="skill-img">
-                    <span class="skill-intro" data-aos="zoom-in">
-                        항상 배운다는 자세로 임하며<br>
-                        한번 알게 된 내용은 <br>
-                        <b>제 것으로 만들 자신이 있습니다.</b>
-                    </span>
-                    <img src="images/pro-ani.gif" alt="영상">
-                </span>
-                <div class="skill-pro">
-                    <div class="skill-tit">
-                        <h2>Skill</h2>
-                        <img src="images/skill_bar.png" alt="제목">
-                    </div>
-                    <div class="skill-level">
-                        <p>01<span class="mr-20"></span>Photoshop</p>
-                        <div id="Photo-skill"></div>
-                    </div>
-                    <div class="skill-level">
-                        <p>02<span class="mr-20"></span>Adobe Illustrator</p>
-                        <div id="illust-skill"></div>
-                    </div>
-                    <div class="skill-level">
-                        <p>03<span class="mr-20"></span>HTML</p>
-                        <div id="html-skill"></div>
-                    </div>
-                    <div class="skill-level">
-                        <p>04<span class="mr-20"></span>CSS</p>
-                        <div id="css-skill"></div>
-                    </div>
-                    <div class="skill-level">
-                        <p>05<span class="mr-20"></span>javascript</p>
-                        <div id="java-skill"></div>
-                    </div>
-                    <div class="skill-level">
-                        <p>06<span class="mr-20"></span>jQuery</p>
-                        <div id="jquery-skill"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- publ영역 -->
-        <section class="publ" id="publ">
+        <section class="work" id="work1">
             <div class="container">
                 <p class="work-tit" data-aos="fade-right">
                     WEB PUBLISHING
@@ -235,12 +180,16 @@
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>#풀무원 2023년 새해 혜택 이벤트</span>
                                 </li>
                                 <li>
                                     <h2>Date</h2>
                                     <span>2023.01.02</span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
                                 </li>
                             </ul>
                         </div>
@@ -256,12 +205,16 @@
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>#풀무원 왔나 봄 프로모션</span>
                                 </li>
                                 <li>
                                     <h2>Date</h2>
                                     <span>2023.03.02</span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
                                 </li>
                             </ul>
                         </div>
@@ -277,12 +230,16 @@
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>풀무원 39주년 창립 기념 이벤트</span>
                                 </li>
                                 <li>
                                     <h2>Date</h2>
                                     <span>2023.08.01</span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
                                 </li>
                             </ul>
                         </div>
@@ -298,12 +255,16 @@
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>#풀무원 2주년 프로모션</span>
                                 </li>
                                 <li>
                                     <h2>Date</h2>
                                     <span>2023.08.01</span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
                                 </li>
                             </ul>
                         </div>
@@ -312,16 +273,16 @@
                                 <img src="images/publ5.png" alt="퍼블리싱">
                                 <ul class="work-bt">
                                     <li><a href="https://dlwlgh324.github.io/greenjuice/" target="_blank">
-                                        <img src="images/publ-bt1.png" alt=""></a></li>
-                                    <li><a href="https://greenjuice.pulmuone.com/" target="_blank" >
-                                        <img src="images/publ-bt2.png" alt=""></a></li>
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                    <li><a href="https://greenjuice.pulmuone.com/" target="_blank">
+                                            <img src="images/publ-bt2.png" alt=""></a></li>
                                     <li><a href="https://github.com/dlwlgh324/greenjuice" target="_blank">
-                                        <img src="images/publ-bt3.png" alt=""></a></li>
+                                            <img src="images/publ-bt3.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>풀무원 녹즙</span>
                                 </li>
                                 <li>
@@ -335,6 +296,10 @@
                                         배운 후 작업한 사이트이다.
                                     </span>
                                 </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="swiper-slide">
@@ -342,16 +307,16 @@
                                 <img src="images/publ6.png" alt="퍼블리싱">
                                 <ul class="work-bt">
                                     <li><a href="https://dlwlgh324.github.io/hansalim/" target="_blank">
-                                        <img src="images/publ-bt1.png" alt=""></a></li>
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
                                     <li><a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank">
-                                        <img src="images/publ-bt2.png" alt=""></a></li>
+                                            <img src="images/publ-bt2.png" alt=""></a></li>
                                     <li><a href="https://github.com/dlwlgh324/hansalim" target="_blank">
-                                        <img src="images/publ-bt3.png" alt=""></a></li>
+                                            <img src="images/publ-bt3.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>한살림 장보기</span>
                                 </li>
                                 <li>
@@ -367,6 +332,10 @@
                                         구현할 수 있게 되었다.
                                     </span>
                                 </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="swiper-slide">
@@ -374,16 +343,16 @@
                                 <img src="images/publ7.png" alt="퍼블리싱">
                                 <ul class="work-bt">
                                     <li><a href="https://dlwlgh324.github.io/pulmuonewater/" target="_blank">
-                                        <img src="images/publ-bt1.png" alt=""></a></li>
-                                    <li><a href="https://www.pulmuonewater.com/" target="_blank" >
-                                        <img src="images/publ-bt2.png" alt=""></a></li>
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                    <li><a href="https://www.pulmuonewater.com/" target="_blank">
+                                            <img src="images/publ-bt2.png" alt=""></a></li>
                                     <li><a href="https://github.com/dlwlgh324/pulmuonewater" target="_blank">
-                                        <img src="images/publ-bt3.png" alt=""></a></li>
+                                            <img src="images/publ-bt3.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>풀무원 샘물</span>
                                 </li>
                                 <li>
@@ -398,6 +367,10 @@
                                         jQuery로 css를 구현할 수 있게되었다.
                                     </span>
                                 </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="swiper-slide">
@@ -405,16 +378,16 @@
                                 <img src="images/publ8.png" alt="퍼블리싱">
                                 <ul class="work-bt">
                                     <li><a href="https://dlwlgh324.github.io/nexus/" target="_blank">
-                                        <img src="images/publ-bt1.png" alt=""></a></li>
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
                                     <li><a href="https://nexus-official.com/" target="_blank">
-                                        <img src="images/publ-bt2.png" alt=""></a></li>
+                                            <img src="images/publ-bt2.png" alt=""></a></li>
                                     <li><a href="https://github.com/dlwlgh324/nexus" target="_blank">
-                                    <img src="images/publ-bt3.png" alt=""></a></li>
+                                            <img src="images/publ-bt3.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>넥서스 플래그십 서울 갤러리</span>
                                 </li>
                                 <li>
@@ -429,6 +402,10 @@
                                         제작하였다.
                                     </span>
                                 </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="swiper-slide">
@@ -436,16 +413,16 @@
                                 <img src="images/publ9.png" alt="퍼블리싱">
                                 <ul class="work-bt">
                                     <li><a href="https://dlwlgh324.github.io/babymeal/" target="_blank">
-                                        <img src="images/publ-bt1.png" alt=""></a></li>
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
                                     <li><a href="http://www.babymeal.co.kr/front/getMain.do#" target="_blank">
-                                        <img src="images/publ-bt2.png" alt=""></a></li>
+                                            <img src="images/publ-bt2.png" alt=""></a></li>
                                     <li><a href="https://github.com/dlwlgh324/babymeal" target="_blank">
-                                        <img src="images/publ-bt3.png" alt=""></a></li>
+                                            <img src="images/publ-bt3.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <ul class="work-list">
                                 <li>
-                                    <h2>Site</h2>
+                                    <h2>Project</h2>
                                     <span>풀무원 베이비밀</span>
                                 </li>
                                 <li>
@@ -455,10 +432,14 @@
                                 <li>
                                     <h2>Explain</h2>
                                     <span>
-                                        기존 웹사이트 familysite부분과<br>
+                                        기존 웹사이트 familyProject부분과<br>
                                         event슬라이드 부분을<br>
                                         수정하였다.
                                     </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
                                 </li>
                             </ul>
                         </div>
@@ -466,119 +447,209 @@
                 </div>
             </div>
         </section>
-        <!-- design영역 -->
-        <section class="other" id="red">
+        <!-- design 영역 -->
+        <section class="work" id="work2">
             <div class="container">
-                <h2>Design Work</h2>
-                <div class="other-box">
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>01</b><span class="mr-20"></span>프로모션 디자인
-                        </p>
-                        <a href="work/etc/promotion1.png" class="other-img" target="_blank">
-                            <img src="images/promotion1.png" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>#풀무원 여름 프로모션</b><br>
-                            여름을 부탁해
-                        </p>
+                <p class="work-tit" data-aos="fade-right">
+                    DESIGN WORKS
+                </p>
+                <div class="swiper-container sw-work">
+                    <!-- 슬라이드 콘트롤러  -->
+                    <div class="sw-work-control">
+                        <span class="sw-work-prev"></span>
+                        <div class="swiper-pagination sw-work-pg"></div>
+                        <span class="sw-work-next"></span>
                     </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>02</b><span class="mr-20"></span>프로모션 디자인
-                        </p>
-                        <a href="work/etc2/promotion2.png" class="other-img" target="_blank">
-                            <img src="images/promotion2.png" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>#풀무원 브랜드위크 프로모션</b><br>
-                            마트 장보기
-                        </p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="work-main">
+                                <img src="images/des6.png" alt="디자인">
+                                <ul class="work-bt1">
+                                    <li><a href="/work/etc6/label.jpg" target="_blank">
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <ul class="work-list">
+                                <li>
+                                    <h2>Project</h2>
+                                    <span>
+                                        액상담배 라벨 디자인
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Date</h2>
+                                    <span>2022.09.20</span>
+                                </li>
+                                <li>
+                                    <h2>Explain</h2>
+                                    <span>
+                                        '친구액상','홀리쥬스' 두가지 액상 담배의 라벨디자인
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-main">
+                                <img src="images/des5.png" alt="디자인">
+                                <ul class="work-bt1">
+                                    <li><a href="/work/etc5/pop.jpg" target="_blank">
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <ul class="work-list">
+                                <li>
+                                    <h2>Project</h2>
+                                    <span>'풀뿌리' 평생학습 동아리 합동공연 <br>
+                                        팜플렛 디자인</span>
+                                </li>
+                                <li>
+                                    <h2>Date</h2>
+                                    <span>2022.10.29</span>
+                                </li>
+                                <li>
+                                    <h2>Explain</h2>
+                                    <span>
+                                        동아리 공연 팜플렛 디자인으로, 동아리 이름인 '풀뿌리'에 맞게 소박함과 귀여움을 주요 컨셉을 잡았고,
+                                        이를 강조하기 위해 여러가지 동식물 오브젝트들을 사용하여 제작하였습니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-main">
+                                <img src="images/des1.png" alt="디자인">
+                                <ul class="work-bt1">
+                                    <li><a href="/work/etc1/promotion1.jpg" target="_blank">
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <ul class="work-list">
+                                <li>
+                                    <h2>Project</h2>
+                                    <span>올가 동물복지 축산물 페스티벌 <br>
+                                        프로모션 페이지</span>
+                                </li>
+                                <li>
+                                    <h2>Date</h2>
+                                    <span>2023.06.17</span>
+                                </li>
+                                <li>
+                                    <h2>Explain</h2>
+                                    <span>
+                                        '동물복지 축산물 페스티벌'이란 동물복지와 관련된 가치를 강조하고 이를 실천하는 축산물을 소개하며 홍보하는 행사로, 이에 걸맞은 자연 친화적인
+                                        모습을 나타내려고 하였고,<br>ORGA의 이미지에 맞게 전체적으로 차분한 분위기를 연출 할 수 있도록 디자인하였습니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-main">
+                                <img src="images/des2.png" alt="디자인">
+                                <ul class="work-bt1">
+                                    <li><a href="/work/etc2/promotion2.png" target="_blank">
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <ul class="work-list">
+                                <li>
+                                    <h2>Project</h2>
+                                    <span>#풀무원 여름을 부탁해 <br>
+                                        프로모션 페이지</span>
+                                </li>
+                                <li>
+                                    <h2>Date</h2>
+                                    <span>2023.07.04</span>
+                                </li>
+                                <li>
+                                    <h2>Explain</h2>
+                                    <span>
+                                        풀무원 여름 상품 프로모션으로 해변을 연상케 할 수 있는 컨셉으로 잡았으며, 행사 상품들을 한 눈에 볼 수 있도록 보다 직관적으로
+                                        제작하였습니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-main">
+                                <img src="images/des3.png" alt="디자인">
+                                <ul class="work-bt1">
+                                    <li><a href="/work/etc3/promotion3.jpg" target="_blank">
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <ul class="work-list">
+                                <li>
+                                    <h2>Project</h2>
+                                    <span>#풀무원 브랜드 위크 <br>
+                                        프로모션 페이지</span>
+                                </li>
+                                <li>
+                                    <h2>Date</h2>
+                                    <span>2023.07.04</span>
+                                </li>
+                                <li>
+                                    <h2>Explain</h2>
+                                    <span>
+                                        높은 할인을 제공하는 '우주 할인'을 키워드로 잡아
+                                        전체적으로 우주 느낌이 나도록 작업하였습니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-main">
+                                <img src="images/des4.png" alt="디자인">
+                                <ul class="work-bt1">
+                                    <li><a href="/work/etc4/promotion4.png" target="_blank">
+                                            <img src="images/publ-bt1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                            <ul class="work-list">
+                                <li>
+                                    <h2>Project</h2>
+                                    <span>#풀무원 브랜드 위크 <br>
+                                        프로모션 페이지</span>
+                                </li>
+                                <li>
+                                    <h2>Date</h2>
+                                    <span>2023.11.01</span>
+                                </li>
+                                <li>
+                                    <h2>Explain</h2>
+                                    <span>
+                                        풀무원 PB상품을 소개하는 프로모션으로, 풀무원의 시그니처 컬러인 녹색과 차분한 남색을 사용하여
+                                        자연친화적이며 편안한 느낌을 주도록 하였습니다.<br>
+                                        '장보기'라는 키워드를 강조하기 위해 장바구니 오브젝트와 바코드를 떠올리게 하는 오브젝트를 사용해 작업하였습니다.
+                                    </span>
+                                </li>
+                                <li>
+                                    <h2>Participation</h2>
+                                    <span>개인 작업물(기여도 100%)</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>03</b><span class="mr-20"></span>프로모션 디자인
-                        </p>
-                        <a href="work/etc3/promotion3.png" class="other-img" target="_blank">
-                            <img src="images/promotion3.png" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>ORGA 동물복지 축산물 프로모션</b><br>
-                            동물복지 축산물 페스티벌
-                        </p>
-                    </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>04</b><span class="mr-20"></span>프로모션 디자인
-                        </p>
-                        <a href="work/etc4/promotion4.png" class="other-img" target="_blank">
-                            <img src="images/promotion4.png" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>#풀무원 메인 프로모션</b><br>
-                            #풀페스타
-                        </p>
-                    </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>05</b><span class="mr-20"></span>이벤트 디자인
-                        </p>
-                        <a href="work/etc5/event1.jpg" class="other-img" target="_blank">
-                            <img src="images/event1.jpg" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>#풀무원 이벤트</b><br>
-                            #풀무원 시크릿찬스 이벤트
-                        </p>
-                    </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>06</b><span class="mr-20"></span>굿즈 디자인
-                        </p>
-                        <a href="work/etc8/event2.png" class="other-img" target="_blank">
-                            <img src="images/other5-1.png" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>굿즈 디자인</b><br>
-                            제 2회 자양면민 문화예술 한마당 토마이야기 굿즈
-                        </p>
-                    </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>07</b><span class="mr-20"></span>라벨 디자인
-                        </p>
-                        <a href="work/etc6/label1.png" class="other-img" target="_blank">
-                            <img src="images/product1.png" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>전자담배 라벨디자인</b><br>
-                            라벨디자인 참여
-                        </p>
-                    </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>08</b><span class="mr-20"></span>팜플렛 디자인
-                        </p>
-                        <a href="work/etc7/pop1.jpg" class="other-img" target="_blank">
-                            <img src="images/pop1.jpg" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>공연 팜플렛</b><br>
-                            평생학습 동아리 합동공연 '풀뿌리'
-                        </p>
-                    </div>
-                    <div class="other-cont">
-                        <p class="other-tit">
-                            <b>09</b><span class="mr-20"></span>앨범 커버 리디자인
-                        </p>
-                        <a href="work/etc/1.png" class="other-img" target="_blank">
-                            <img src="images/other1.png" class="other-pro" alt="etc">
-                        </a>
-                        <p class="other-txt">
-                            <b>TOMORROW X TOGEHTER</b><br>
-                            minisode1 : Blue Hour
-                        </p>
-                    </div>
+                </div>
             </div>
         </section>
         <!-- life영역 -->
@@ -615,14 +686,14 @@
                             눈앞에 종이와 펜만 있으면 언제 어디서든 그림을 그렸습니다.<br><br>
 
                             그로 인해 그림은 저에게 있어 하나의 습관이 되었습니다.<br><br>
-                            
+
                             아직까진 배우는 단계라 어렵긴 하지만,<br>
                             서서히 발전해 나갈 제 모습이 기대됩니다.
                         </span>
                     </div>
                     <div class="life-cont life3" data-aos="fade-left">
                         <p>좋아하는 것</p>
-                        <img src="images/life-i.png" alt="하트" class="heart">
+                        <img src="images/life-i2.png" alt="하트" class="heart">
                         <span class="heart"></span>
                         <span>#애니메이션 #바다 #춘식이</span>
                         <div class="life3-img">
