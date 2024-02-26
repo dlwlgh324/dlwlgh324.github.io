@@ -197,15 +197,13 @@ h2 {
     transform: translateX(-50%);
     display: block;
     width: 100%;
-    height: 9rem;
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+    height: 7.5rem;
     z-index: 999;
     transition: all 0.2s;
 }
 
 .header-active {
-    background-color: #fff;
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255, 0.9);
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2)
 }
 
@@ -224,7 +222,7 @@ h2 {
 .header .container {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -237,7 +235,7 @@ h2 {
 }
 
 .gnb {
-    width: 65rem;
+    width: 70rem;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -246,34 +244,16 @@ h2 {
 
 .gnb>li>a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: 0;
-    color: #fff;
     transition: 0.3s;
 }
 
 .gnb>li>a:hover {
+    font-weight: bold;
     color: rgb(133, 141, 247);
 }
-
-.gnb>li>a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -0.3rem;
-    width: 0;
-    height: 0.2rem;
-    background-color: rgb(205, 76, 245);
-    border-radius: 2rem;
-    transition: all 0.3s;
-}
-
-.gnb>li>a:hover::before {
-    width: 100%;
-    background-color: rgb(133, 141, 247);
-}
-
 
 /* visual영역 */
 .visual {
@@ -282,12 +262,111 @@ h2 {
     height: 97rem;
     background: url('../images/visual.png') no-repeat;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .visual .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: block;
+}
+
+.visual .container img{
+    position: absolute;
+}
+
+.object1 {
+    top: -53px;
+    left: -37px;
+}
+.object2 {
+    top: -28px;
+    left: 180px;
+}
+.object3 {
+    top: -35px;
+    left: 450px;
+}
+.object4 {
+    top: -30px;
+    left: 647px;
+}
+.object5 {
+    top: 298px;
+    left: -57px;
+}
+.object6 {
+    top: 245px;
+    left: 150px;
+}
+.object7 {
+    top: 205px;
+    left: 376px;
+}
+.object8 {
+    top: 250px;
+    left: 572px;
+}
+.object9 {
+    top: 230px;
+    left: 660px;
+}
+
+/* 상단모션 */
+
+.motion_box .motion1{animation:bounce 8s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0px);
+            transform:translate(0, 0px);
+  }
+  50% {
+    -webkit-transform:translate(0, -20px);
+            transform:translate(0, -20px);
+  }
+}
+.motion_box .motion2{animation:bounce 6s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -20px);
+            transform:translate(0, -20px);
+  }
+}
+.motion_box .motion3{animation:bounce 4s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -25px);
+            transform:translate(0, -25px);
+  }
+}
+.motion_box .motion4{animation:bounce 4s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -30px);
+            transform:translate(0, -30px);
+  }
+}
+.motion_box .motion5{animation:bounce 8s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -30px);
+            transform:translate(0, -30px);
+  }
 }
 
 .visual-txt {
@@ -555,7 +634,7 @@ h2 {
 }
 
 /* publ영역 */
-.publ {
+.work {
     position: relative;
     width: 160rem;
     height: 87rem;
@@ -563,6 +642,14 @@ h2 {
     border-top: 0.1rem solid #ddd;
     border-bottom: 0.1rem solid #ddd;
     margin: 0 auto;
+}
+
+#work1{
+    margin-top: 4rem;
+}
+
+#work2 {
+    border-top: 0;
 }
 
 .work-tit {
@@ -609,7 +696,7 @@ h2 {
 }
 
 .work-list>li {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .work-list>li>h2 {
@@ -676,53 +763,6 @@ h2 {
     color: #999;
 }
 
-/* design work영역 */
-.other {
-    position: relative;
-}
-
-.other .container {
-    padding-top: 12rem;
-    padding-bottom: 2rem;
-}
-
-.other-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 7rem;
-}
-
-.other-cont {
-    padding-bottom: 7rem;
-}
-
-.other-cont b {
-    font-weight: bold;
-}
-
-.other-tit {
-    padding-bottom: 4rem;
-}
-
-.other-img{
-    position: relative;
-    display: block;
-    width: 370px;
-    height: 320px;
-}
-
-.other-img img{
-    width: 100%;
-    height: 100%;
-}
-
-.other-txt {
-    font-size: 1.3rem;
-    line-height: 2.5;
-    padding-top: 1.5rem;
-}
-
 /* life영역 */
 .life {
     position: relative;
@@ -757,15 +797,16 @@ h2 {
     margin-left: 0;
 }
 
-.life-cont p {
+.life-cont p {    
     font-weight: bold;
     padding: 1rem 0;
+    margin-right: 2.4rem;
 }
 
 .heart {
     position: absolute;
-    top: 0.8rem;
-    right: 5.6rem;
+    top: 9px;
+    right: 0;
     z-index: -1;
 }
 
