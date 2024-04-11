@@ -823,52 +823,129 @@ h2 {
 .footer {
     position: relative;
     width: 160rem;
-    height: 85rem;
-    background-color: #697290;
-    text-align: center;
+    height: 97rem;
+    background: url('../images/visual_2.png') no-repeat;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .footer .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     display: block;
 }
 
-.f-main {
-    color: #fff;
-    line-height: 2;
-    font-weight: 200;
-    font-size: 2rem;
+.footer .container img{
+    position: absolute;
 }
 
-.f-txt>b {
-    font-weight: 600;
-}
-
-.f-cont {
-    width: 27rem;
-    margin: 0 auto;
-    padding-top: 5rem;
-    display: flex;
-    justify-content: space-around
-}
-
-
-.f-cont-name {
-    font-size: 1.5rem;
-    font-weight: 200;
-    padding-top: 1.2rem;
-    color: #fff;
-}
 
 .copy {
+    position: absolute;
+    top: 854px;
+    left: 50%;
+    transform: translateX(-50%);
     padding-top: 5rem;
     padding-bottom: 3rem;
-    font-size: 1.2rem;
-    color: #f9f9f9;
+    font-size: 1.4rem;
+    color: #000;
     font-weight: 100;
     text-align: center;
 }
+
+.object10 {
+    top: 86px;
+    left: 28px;
+}
+.object11 {
+    top: 74px;
+    left: 208px;
+}
+.object12 {
+    top: 96px;
+    left: 433px;
+    z-index: 2;
+}
+.object13 {
+    top: 85px;
+    left: 638px;
+    z-index: 1;
+}
+.object14 {
+    top: 94px;
+    left: 839px;
+}
+.object15 {
+    top: 378px;
+    left: 215px;
+    z-index: 5;
+}
+.object16 {
+    top: 358px;
+    left: 396px;
+    z-index: 4;
+}
+.object17 {
+    top: 373px;
+    left: 633px;
+    z-index: 3;
+}
+
+
+/* 하단모션 */
+
+.motion_box .motion1{animation:bounce 8s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0px);
+            transform:translate(0, 0px);
+  }
+  50% {
+    -webkit-transform:translate(0, -20px);
+            transform:translate(0, -20px);
+  }
+}
+.motion_box .motion2{animation:bounce 6s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -20px);
+            transform:translate(0, -20px);
+  }
+}
+.motion_box .motion3{animation:bounce 4s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -25px);
+            transform:translate(0, -25px);
+  }
+}
+.motion_box .motion4{animation:bounce 4s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -30px);
+            transform:translate(0, -30px);
+  }
+}
+.motion_box .motion5{animation:bounce 8s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -30px);
+            transform:translate(0, -30px);
+  }
+}
+
