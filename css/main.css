@@ -275,40 +275,40 @@ h2 {
 }
 
 .object1 {
-    top: -53px;
-    left: -37px;
+    top: 76px;
+    left: 92px;
 }
 .object2 {
-    top: -28px;
-    left: 180px;
+    top: 74px;
+    left: 284px;
 }
 .object3 {
-    top: -35px;
-    left: 450px;
-}
-.object4 {
-    top: -30px;
-    left: 647px;
-}
-.object5 {
-    top: 298px;
-    left: -57px;
-}
-.object6 {
-    top: 245px;
-    left: 150px;
-}
-.object7 {
-    top: 205px;
-    left: 376px;
-}
-.object8 {
-    top: 250px;
+    top: 82px;
     left: 572px;
 }
+.object4 {
+    top: 75px;
+    left: 760px;
+}
+.object5 {
+    top: 395px;
+    left: 44px;
+}
+.object6 {
+    top: 333px;
+    left: 269px;
+}
+.object7 {
+    top: 315px;
+    left: 504px;
+}
+.object8 {
+    top: 363px;
+    left: 699px;
+}
 .object9 {
-    top: 230px;
-    left: 660px;
+    top: 327px;
+    left: 764px;
 }
 
 /* 상단모션 */
